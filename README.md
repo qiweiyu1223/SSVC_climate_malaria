@@ -1,4 +1,5 @@
-# SSVC_climate_malaria
+# SSVC_climate_malaria V1
+version 1.0, updated 10 March, 2024
 Now published in PNAS as 'Spatial spillovers of violent conflict amplify the impacts of climate variability on malaria risk in sub-Saharan Africa'
 
 # Content:
