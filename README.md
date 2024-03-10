@@ -4,4 +4,4 @@ Now published in PNAS as 'Spatial spillovers of violent conflict amplify the imp
 # Content:
  - 1 codes: there are two codes in the file. One is the code for the global variable's definition, and the other is the detailed code for all the regression analysis. 
  - 2 data: the DHS dataset we used and processed.
- - 3 figures: all figures are created by Stata in the main paper and Supplementary Appendix.
+ - 3 figures: all dofile (Stata) for the all figures shown in the main paper and Supplementary Appendix (except for some figures created by ArcGIS or QGIS).
