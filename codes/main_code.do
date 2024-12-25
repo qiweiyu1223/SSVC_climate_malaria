@@ -346,20 +346,6 @@ local g=`g'+1
 run "$dofile/4 fig4.do"
 
 
-*the impact of SSVC on household in the location with different climate and tmp  
-use "$use_data/household.dta",clear
-
-reghdfe man_rate $conflict $household_control1 if tmp_indicate==1, absorb(adm1_name#hv025 hv007#hv006) cluster(adm1_name#hv025)
-outreg2 using "$result/3 experiment/climate and man_rate.xls", replace se nocons lab dec(5) keep(ln_deaths_100_1_ds5)
-
-reghdfe man_rate $conflict $household_control1 if tmp_indicate==0, absorb(adm1_name#hv025 hv007#hv006) cluster(adm1_name#hv025)
-outreg2 using "$result/3 experiment/climate and man_rate.xls", append se nocons lab dec(5) keep(ln_deaths_100_1_ds5)
-
-reghdfe man_rate $conflict $household_control1 if wet_indicate==1,absorb(adm1_name#hv025 hv007#hv006) cluster(adm1_name#hv025)
-outreg2 using "$result/3 experiment/climate and man_rate.xls", append se nocons lab dec(5) keep(ln_deaths_100_1_ds5)
-
-reghdfe man_rate $conflict $household_control1 if wet_indicate==0, absorb(adm1_name#hv025 hv007#hv006) cluster(adm1_name#hv025)
-outreg2 using "$result/3 experiment/climate and man_rate.xls", append se nocons lab dec(5) keep(ln_deaths_100_1_ds5)
 
 **# Mechanism 2  #5
 
